@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="css/styles-styles.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <br>
+    
+
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>APE Header Example</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px 20px;
+            background-color: white;
+            position: relative;
+        }
+
+        .header-content {
+            display: flex;
+            align-items: center;
+            justify-content: center; /* Center the content inside this container */
+            flex: 1; /* Allow this container to take the remaining space */
+        }
+
+        .header img {
+            max-height: 60px;
+            margin-right: 20px; /* Add some space between the logo and the nav */
+        }
+
+        .nav {
+            display: flex;
+            gap: 40px; /* Space between nav links */
+        }
+
+        .nav a {
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+            font-size: 18px;
+        }
+
+        .nav a.active {
+            color: black;
+        }
+
+        .header::after {
+            content: '';
+            display: block;
+            width: 100%;
+            height: 2px;
+            background-color: black;
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            z-index: 1;
+        }
+
+    </style>
+
+
+    <div class="header">
+        <a href="ape-6cj5.onrender.html">
+            <img src="images/banner.png" alt="APE Logo">
+        </a>
+        <div class="header-content">
+            <div class="nav">
+                <a href="projects.html" class="active">Active Projects</a>
+                <a href="model.html" class="active">Our Model &amp; Success</a>
+                <a href="story.html" class="active">Our Story</a>
+                <a href="contact.html" class="active">Contact Us</a>
+            </div>
+        </div>
+    </div>
+
+
+
+    
+
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Metrics Section</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        header, footer {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        header h1, footer p {
+            margin: 0;
+        }
+
+        main {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .metrics-section {
+            background-color: #e8f0fa;
+            width: 100%;
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        .metrics-section h2 {
+            color: #36C288;
+            font-size: 2em;
+            margin-bottom: 40px;
+        }
+
+        .metrics-container {
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            gap: 40px;
+        }
+
+        .metrics-column {
+            background-color: #ffffff;
+            border-radius: 8px;
+            padding: 20px;
+            width: 45%;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .metrics-column h3 {
+            color: #000000;
+            font-size: 1.5em;
+            margin-bottom: 20px;
+        }
+
+        .metrics-column ul {
+            list-style-type: circle;
+            padding-left: 20px;
+            text-align: left;
+        }
+
+        .metrics-column ul li {
+            margin-bottom: 20px;
+        }
+
+        .metrics-column ul li strong {
+            font-size: 1.1em;
+        }
+
+        .metrics-column ul li span {
+            display: block;
+            margin-top: 5px;
+            color: #666;
+        }
+
+        .currently {
+            background-color: #66D199;
+        }
+
+        .ape-way {
+            background-color: #A8D9F8;
+        }
+
+        .problem-section {
+            background-color: #e8f0fa;
+            width: 100%;
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        .problem-section h2 {
+            color: #658DC6;
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+
+        .problem-section p {
+            font-size: 1.1em;
+            color: #333;
+            margin-bottom: 20px;
+            line-height: 1.6;
+            text-align: left;
+            max-width: 800px;
+            margin: 0 auto 20px auto;
+        }
+
+        .solution-section {
+            background-color: #e8f0fa;
+            width: 100%;
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        .solution-section h2 {
+            color: #658DC6;
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+
+        .solution-section p {
+            font-size: 1.1em;
+            color: #333;
+            margin-bottom: 20px;
+            line-height: 1.6;
+            text-align: left;
+            max-width: 800px;
+            margin: 0 auto 20px auto;
+        }
+
+        .benefits {
+            background-color: #e8f0fa;
+            width: 100%;
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        .benefits h2 {
+            color: rgb(237, 142, 26);
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+
+        .benefits p {
+            font-size: 1.1em;
+            color: #333;
+            margin-bottom: 20px;
+            line-height: 1.6;
+            text-align: left;
+            max-width: 800px;
+            margin: 0 auto 20px auto;
+        }
+    </style>
+
+
+    <main>
+        <!-- Metrics Section -->
+        <section class="metrics-section">
+            <h2>Metrics used to determine a student's success for a role</h2>
+            <div class="metrics-container">
+                <div class="metrics-column currently">
+                    <h3>Currently</h3>
+                    <ul>
+                        <li>
+                            <strong>Past work experience</strong><br>
+                            <span>Issue: Usually, minimal years of experience and the issue of identifying what qualifies as relevant experience.</span>
+                        </li>
+                        <li>
+                            <strong>Determining a candidate by their network</strong><br>
+                            <span>Issue: Students are starting in their industry and besides professors and personal friends are likely to have no career connections.</span>
+                        </li>
+                        <li>
+                            <strong>Recruiting at Job Fair</strong><br>
+                            <span>Issue: Job fairs cost time and money with a recruiter representing your company to hundreds of students. Often these events can feel very forced, and candidates may struggle in showing their best qualities in a 2&ndash;3-minute conversation.</span>
+                        </li>
+                        <li>
+                            <strong>Previous Clubs and Organizations</strong><br>
+                            <span>Issue: While clubs and organizations can be valuable for building connections, their size and relevance often vary depending on the field and institution. Finding a club that directly aligns with a specific industry is particularly challenging at community colleges or underrepresented colleges.</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="metrics-column ape-way">
+                    <h3>APE way</h3>
+                    <ul>
+                        <li>
+                            <strong>Previous company experience</strong><br>
+                            <span>By participating in these projects, students gain valuable industry experience directly related to the work your company focuses on. Allowing you to assess a student&rsquo;s technical fit for a position, providing a clear indication of their potential.</span>
+                        </li>
+                        <li>
+                            <strong>Personal Student Connections within the company</strong><br>
+                            <span>Through these projects, you can build connections with the students who are most passionate about your company. This gives you the opportunity to learn more about their stories and motivations before the interview or hiring process begins.</span>
+                        </li>
+                        <li>
+                            <strong>Workshop events</strong><br>
+                            <span>Our workshop events combine the benefits of traditional recruiting fairs with added value. Your recruiters can prepare students for the application process and have meaningful one-on-one interactions with interested candidates, without the pressure of discussing job-specific questions.</span>
+                        </li>
+                        <li>
+                            <strong>Partnering with APE to provide projects</strong><br>
+                            <span>Our program is a fraction of the cost of other programs. Additionally, for most networking events, we provide sponsored travel for select partners.</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="problem-section">
+            <h2>The Problem</h2>
+            <p>Through our research of the job market, we found that many engineering students do not secure internships or industry-related job positions before graduating with their bachelor&rsquo;s degree.</p>
+            <p>From the company&rsquo;s perspective, finding the right candidate requires significant effort to ensure a good fit for both the present and future. Large companies receive numerous applications each semester, and an applicant's submission can be dismissed in mere seconds.</p>
+            <p>Beyond recruitment, dedicating time to train and develop interns often takes away from important projects or goals, especially when many students are unsure of how to make the most of their internship experience.</p>
+        </section>
+
+        <section class="solution-section">
+            <h2>Our Solution</h2>
+            <p>Rather than focusing on simply providing more jobs or personally recruiting to ensure companies receive the right candidates, we empower students and companies to collaborate in developing the skills and experience necessary for a student's first job.</p>
+
+            <p>Our projects are designed to address common onboarding challenges, employment fit, and other issues typically encountered when hiring new talent. By making diverse work opportunities available to students, we tackle the issue of student development head-on.</p>
+
+            <p>As a student development program that introduces students to the workplace, we emphasize the training of professionalism and interpersonal skills alongside technical expertise. Instead of relying solely on student organizations and personal networks to build teamwork abilities, our program offers a structured workshop environment where essential skills like teamwork, innovation, and problem-solving are cultivated. We also bring industry leaders into the conversation, addressing the challenges students face as they embark on their career journeys.</p>
+
+            <p>Through our initiative, we are creating a platform that directly prepares students for the workplace, equipping them with the experience, connections, and skills they need to begin and excel in their careers.</p>
+
+        </section>
+
+        <section class="benefits">
+            <h2>Our Benefits</h2>
+            <p><strong>Direct Work Experience</strong></p>
+            <p>Students participate in projects specific to the engineering industry they are interested in.</p>
+            <p>Allows for an opportunity to showcase their skills.</p>
+
+            <p><strong>Mass Networking</strong></p>
+            <p>Companies and students connect to create relationships that benefit both parties.</p>
+
+            <p><strong>Industry Development</strong></p>
+            <p>Students expand their personal and professional capabilities.</p>
+            <p>Members develop industry-ready work experience.</p>
+
+
+        </section>
+    </main>
+
+
+
+    
+
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Footer Example</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            padding: 20px;
+            background-color: #e0eefa; 
+            color: black;
+        }
+
+        .footer div {
+            width: 25%;
+        }
+
+        .footer img {
+            max-height: 80px;
+            margin-bottom: 10px;
+        }
+
+        .ape-logo {
+    height: 300px; /* Increase height to make the logo bigger */
+    width: auto;   /* Maintain aspect ratio */
+}
+
+        .footer p {
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+
+        .social-icons {
+            display: flex;
+            gap: 15px;
+        }
+
+        .social-icons a img {
+            width: 30px; /* Adjust size of icons */
+            height: 30px;
+        }
+
+        .footer h3 {
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+
+        .footer a {
+            display: block;
+            text-decoration: none;
+            color: black;
+            margin-bottom: 5px;
+            font-size: 18px;
+        }
+
+        .footer a:hover {
+            text-decoration: underline;
+        }
+
+        .footer-bottom {
+            text-align: center;
+            padding: 10px;
+            background-color: #fff;
+            font-size: 14px;
+            border-top: 1px solid #ccc;
+        }
+
+        .footer-bottom a {
+            color: #0066cc;
+            text-decoration: none;
+        }
+
+        .footer-bottom a:hover {
+            text-decoration: underline;
+        }
+    </style>
+
+
+    <footer class="footer">
+        <div>
+            <img src="images/apeb.png" alt="APE Logo" class="ape-logo">
+            <p>We are here to help you get started on your career journey.</p>
+            <div class="social-icons">
+                <a href="https://www.linkedin.com/company/104398077/admin/analytics/visitors/"><img src="images/linkedin.png" alt="LinkedIn">Linkedin</a>
+                <a href="https://www.instagram.com/ape_connect/"><img src="images/insta.png" alt="Instagram">Instagram</a>
+                <a href="https://epichire.com/clubs/140"><img src="images/epichire.png" alt="Epichire">Epichire</a>
+            </div>
+        </div>
+
+        <div>
+            <h3>Companies</h3>
+            <a href="https://docs.google.com/forms/d/140mVhf9yUQ1V-wzYkBwNznesUmxuIBjV1X9gabUXOgs/edit">Request a Demo</a>
+        </div>
+
+        <div>
+            <h3>Students</h3>
+            <a href="projects.html">Active Projects</a>
+        </div>
+
+        <div>
+            <h3>About Us</h3>
+            <a href="model.html">Our Model</a>
+            <a href="story.html">Our Story</a>
+            <a href="https://www.canva.com/design/DAGPKmYPk1E/qHKdMTMSGJD5FdYxfwkfww/view?utm_content=DAGPKmYPk1E&amp;utm_campaign=designshare&amp;utm_medium=link&amp;utm_source=editor">Schedule</a>
+            <a href="https://forms.gle/9bCuB3cjCvywCDBA7">Newsletter</a>
+            <a href="contact.html">Contact Us</a>
+        </div>
+    </footer>
+
+    <div class="footer-bottom">
+        <p>&copy; 2024 <a href="#">Association of Professional Engineers</a>, All Rights Reserved. Contract Terms * Client Terms * Policies * Accessibility Statement</p>
+    </div>
+
+
+
+    <br>
+</body>
+</html>

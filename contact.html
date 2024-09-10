@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="css/styles-styles.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <br>
+    
+
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>APE Header Example</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px 20px;
+            background-color: white;
+            position: relative;
+        }
+
+        .header-content {
+            display: flex;
+            align-items: center;
+            justify-content: center; /* Center the content inside this container */
+            flex: 1; /* Allow this container to take the remaining space */
+        }
+
+        .header img {
+            max-height: 60px;
+            margin-right: 20px; /* Add some space between the logo and the nav */
+        }
+
+        .nav {
+            display: flex;
+            gap: 40px; /* Space between nav links */
+        }
+
+        .nav a {
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+            font-size: 18px;
+        }
+
+        .nav a.active {
+            color: black;
+        }
+
+        .header::after {
+            content: '';
+            display: block;
+            width: 100%;
+            height: 2px;
+            background-color: black;
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            z-index: 1;
+        }
+
+    </style>
+
+
+    <div class="header">
+        <a href="ape-6cj5.onrender.html">
+            <img src="images/banner.png" alt="APE Logo">
+        </a>
+        <div class="header-content">
+            <div class="nav">
+                <a href="projects.html" class="active">Active Projects</a>
+                <a href="model.html" class="active">Our Model &amp; Success</a>
+                <a href="story.html" class="active">Our Story</a>
+                <a href="contact.html" class="active">Contact Us</a>
+            </div>
+        </div>
+    </div>
+
+
+
+    
+
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa;
+        }
+
+        .contact-section {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+            gap: 20px;
+        }
+
+        .contact-info {
+            width: 40%;
+            color: #333;
+        }
+
+        .contact-info h2 {
+            color: #4CAF50;
+        }
+
+        .contact-info p {
+            margin: 5px 0;
+        }
+
+        .contact-info address {
+            margin-top: 20px;
+            line-height: 1.6;
+        }
+
+        .contact-form {
+            width: 55%;
+            background-color: #eaf4f8;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        .contact-form form {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .form-group {
+            display: flex;
+            gap: 10px;
+        }
+
+        input, select, textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        textarea {
+            resize: vertical;
+            min-height: 100px;
+        }
+
+        button {
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        a {
+            color: #4CAF50;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        /* New styles to increase the size of "Request a Demo" */
+        .request-demo {
+            font-size: 20px; /* Adjust the size as needed */
+            font-weight: bold;
+        }
+    </style>
+
+
+    <div class="contact-section">
+        <div class="contact-info">
+            <h2>Urgent?</h2>
+            <p>For urgent requests, contact us at <a href="mailto:drampy@apedevelop.net">drampy@apedevelop.net</a></p>
+
+            <h2>Not Sold on how APE helps your company?</h2>
+            <p class="request-demo"><a href="https://docs.google.com/forms/d/140mVhf9yUQ1V-wzYkBwNznesUmxuIBjV1X9gabUXOgs/edit">Request a Demo</a></p>
+
+            <h2>Current Projects</h2>
+            <p>Browse all student projects available <a href="projects.html">here</a></p>
+
+            <h2>Need more Assistance?</h2>
+            <p>Fill out this form with all the necessary information and we will be in touch shortly</p>
+
+            <address>
+                <p>East Lansing, MI 48824</p>
+                <p><a href="mailto:drampy@apedevelop.net">drampy@apedevelop.net</a></p>
+                <p><a href="tel:+19316245061">+1 (931)-624-5061</a></p>
+            </address>
+        </div>
+
+        <div class="contact-form">
+            <form id="contactForm" action="https://formspree.io/f/manwvdge" method="POST">
+                <div class="form-group">
+                    <input type="text" name="first-name" placeholder="First Name" required>
+                    <input type="text" name="last-name" placeholder="Last Name" required>
+                </div>
+                <input type="email" name="email" placeholder="Email" required>
+                <select name="related-issue" required>
+                    <option value="" disabled selected>Related Issue</option>
+                    <option value="Customer Support">Customer Support</option>
+                    <option value="Payment and Login Issue">Payment and Login Issue</option>
+                    <option value="Questions regarding Service">Questions regarding Service</option>
+                    <option value="Other">Other</option>
+                </select>
+                <select name="i-am" required>
+                    <option value="" disabled selected>I am a</option>
+                    <option value="College Student, Recent Graduate, or Learner&#8203;">College Student, Recent Graduate, or Learner&#8203;</option>
+                    <option value="Employer or Affiliated with one&#8203;">Employer or Affiliated with one&#8203;</option>
+                    <option value="University or Educational Facility&#8203;">University or Educational Facility&#8203;</option>
+                    <option value="Other">Other</option>
+                </select>
+                <textarea name="message" placeholder="Message" required></textarea>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+
+
+
+    
+
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Footer Example</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            padding: 20px;
+            background-color: #e0eefa; 
+            color: black;
+        }
+
+        .footer div {
+            width: 25%;
+        }
+
+        .footer img {
+            max-height: 80px;
+            margin-bottom: 10px;
+        }
+
+        .ape-logo {
+    height: 300px; /* Increase height to make the logo bigger */
+    width: auto;   /* Maintain aspect ratio */
+}
+
+        .footer p {
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+
+        .social-icons {
+            display: flex;
+            gap: 15px;
+        }
+
+        .social-icons a img {
+            width: 30px; /* Adjust size of icons */
+            height: 30px;
+        }
+
+        .footer h3 {
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+
+        .footer a {
+            display: block;
+            text-decoration: none;
+            color: black;
+            margin-bottom: 5px;
+            font-size: 18px;
+        }
+
+        .footer a:hover {
+            text-decoration: underline;
+        }
+
+        .footer-bottom {
+            text-align: center;
+            padding: 10px;
+            background-color: #fff;
+            font-size: 14px;
+            border-top: 1px solid #ccc;
+        }
+
+        .footer-bottom a {
+            color: #0066cc;
+            text-decoration: none;
+        }
+
+        .footer-bottom a:hover {
+            text-decoration: underline;
+        }
+    </style>
+
+
+    <footer class="footer">
+        <div>
+            <img src="images/apeb.png" alt="APE Logo" class="ape-logo">
+            <p>We are here to help you get started on your career journey.</p>
+            <div class="social-icons">
+                <a href="https://www.linkedin.com/company/104398077/admin/analytics/visitors/"><img src="images/linkedin.png" alt="LinkedIn">Linkedin</a>
+                <a href="https://www.instagram.com/ape_connect/"><img src="images/insta.png" alt="Instagram">Instagram</a>
+                <a href="https://epichire.com/clubs/140"><img src="images/epichire.png" alt="Epichire">Epichire</a>
+            </div>
+        </div>
+
+        <div>
+            <h3>Companies</h3>
+            <a href="https://docs.google.com/forms/d/140mVhf9yUQ1V-wzYkBwNznesUmxuIBjV1X9gabUXOgs/edit">Request a Demo</a>
+        </div>
+
+        <div>
+            <h3>Students</h3>
+            <a href="projects.html">Active Projects</a>
+        </div>
+
+        <div>
+            <h3>About Us</h3>
+            <a href="model.html">Our Model</a>
+            <a href="story.html">Our Story</a>
+            <a href="https://www.canva.com/design/DAGPKmYPk1E/qHKdMTMSGJD5FdYxfwkfww/view?utm_content=DAGPKmYPk1E&amp;utm_campaign=designshare&amp;utm_medium=link&amp;utm_source=editor">Schedule</a>
+            <a href="https://forms.gle/9bCuB3cjCvywCDBA7">Newsletter</a>
+            <a href="contact.html">Contact Us</a>
+        </div>
+    </footer>
+
+    <div class="footer-bottom">
+        <p>&copy; 2024 <a href="#">Association of Professional Engineers</a>, All Rights Reserved. Contract Terms * Client Terms * Policies * Accessibility Statement</p>
+    </div>
+
+
+
+    <br>
+</body>
+</html>
